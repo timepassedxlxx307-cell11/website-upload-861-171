@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索影片 - 免费在线视频</title>
+    <meta name="description" content="搜索最新国产热门电影电视剧，支持按片名、地区、年份、类型和标签筛选，高清流畅在线观看。">
+    <meta name="keywords" content="免费在线视频,最新国产电影,热门电视剧,高清流畅播放,无插件,纯净观影,免费影视,在线观看,国产影视,热门电影,免费电视剧,高清视频">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./index.html" aria-label="免费在线视频">
+                <span class="brand-mark">影</span>
+                <span class="brand-text">免费在线视频</span>
+            </a>
+            <nav class="desktop-nav" aria-label="主导航">
+                <a class="nav-link" href="./index.html">首页</a>
+                <a class="nav-link" href="./categories.html">分类</a>
+                <a class="nav-link" href="./ranking.html">排行榜</a>
+                <a class="nav-link" href="./library/page-001.html">片库</a>
+                <a class="nav-link is-active" href="./search.html">搜索</a>
+            </nav>
+            <form class="header-search" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索影片、地区、类型" aria-label="搜索影片">
+                <button type="submit">搜索</button>
+            </form>
+            <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" data-mobile-nav aria-label="移动导航">
+            <a class="mobile-link" href="./index.html">首页</a>
+            <a class="mobile-link" href="./categories.html">分类</a>
+            <a class="mobile-link" href="./ranking.html">排行榜</a>
+            <a class="mobile-link" href="./library/page-001.html">片库</a>
+            <a class="mobile-link is-active" href="./search.html">搜索</a>
+        </nav>
+    </header>
+    <main data-search-page>
+        <section class="page-hero compact-hero">
+            <div class="container">
+                <p class="section-kicker">搜索筛选</p>
+                <h1>搜索影片</h1>
+                <p>支持按影片名称、地区、年份、类型、标签快速筛选。</p>
+                <div class="search-controls">
+                    <input type="search" data-search-input placeholder="输入关键词">
+                    <select data-type-filter aria-label="类型筛选">
+                        <option value="">全部类型</option>
+                        <option value="电影">电影</option>
+                        <option value="剧集">剧集</option>
+                        <option value="影视">影视</option>
+                    </select>
+                    <select data-year-filter aria-label="年份筛选">
+                        <option value="">全部年份</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    <button type="button" data-search-clear>清空</button>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="movie-grid" data-search-results></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="footer-brand" href="./index.html">免费在线视频</a>
+                <p>免费在线视频平台，提供最新国产热门电影电视剧在线观看。高清流畅播放，无插件，打造纯净的免费影视观看体验！涵盖各类热门影视作品，随时随地畅享精彩内容。</p>
+            </div>
+            <div>
+                <h2>热门入口</h2>
+                <a href="./categories.html">影片分类</a>
+                <a href="./ranking.html">影视排行榜</a>
+                <a href="./library/page-001.html">完整片库</a>
+            </div>
+            <div>
+                <h2>观影频道</h2>
+                <a href="./category/featured-cinema.html">热门推荐</a>
+                <a href="./category/new-arrivals.html">最新上线</a>
+                <a href="./category/domestic-focus.html">国产精选</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 免费在线视频 · 高清流畅播放 · 无插件纯净观影</div>
+    </footer>
+    <script src="./assets/js/movies-data.js"></script>
+    <script src="./assets/js/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

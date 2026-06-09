@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索 - 影视在线</title>
+  <meta name="description" content="影视在线搜索页，支持按片名、年份、地区、类型、标签和简介检索影视内容。">
+  <meta name="keywords" content="搜索,影视在线,高清电影,电视剧在线观看,免费影视,在线播放,剧情片,爱情片,动作片,综艺节目,视频播放,影视资源,电影网站,高清视频">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="主导航">
+      <a class="brand" href="index.html" aria-label="影视在线首页">
+        <span class="brand-icon">▶</span>
+        <span>影视在线</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="categories.html">全部分类</a>
+        <a href="ranking.html">排行榜</a>
+        <a href="search.html">搜索</a>
+        <a href="category-action-adventure.html">动作冒险</a>
+        <a href="category-drama-selected.html">剧情精选</a>
+        <a href="category-comedy-light.html">喜剧轻松</a>
+        <a href="category-romance-emotion.html">爱情情感</a>
+        <a href="category-suspense-thriller.html">悬疑惊悚</a>
+        <a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+      </div>
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索电影、剧集、地区" aria-label="搜索影视内容">
+        <button type="submit">搜索</button>
+      </form>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-hero">
+      <p class="eyebrow">Search</p>
+      <h1>搜索影片</h1>
+      <p>输入片名、地区、年份、类型、标签或剧情关键词，快速查找站内影片。</p>
+      <form class="big-search search-page-form" action="search.html" method="get">
+        <input id="searchInput" type="search" name="q" placeholder="例如：悬疑、爱情、2025、中国大陆">
+        <button type="submit">搜索</button>
+      </form>
+    </section>
+    <section class="section-shell">
+      <div class="section-title compact-title">
+        <div>
+          <p class="eyebrow">Results</p>
+          <h2 id="searchTitle">搜索结果</h2>
+        </div>
+      </div>
+      <div id="searchResults" class="movie-grid"></div>
+      <p id="emptySearch" class="empty-state" hidden>没有找到匹配的影片，请尝试更换关键词。</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section>
+        <div class="footer-brand"><span class="brand-icon">▶</span><strong>影视在线</strong></div>
+        <p>影视在线是专业的高清影视内容平台，提供海量电影、电视剧、综艺节目在线观看服务，涵盖剧情片、爱情片、动作片、喜剧片等各类精彩影片，高清流畅播放，为您带来优质的观影体验。</p>
+      </section>
+      <section>
+        <h2>快速导航</h2>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="categories.html">全部分类</a></li>
+          <li><a href="ranking.html">排行榜</a></li>
+          <li><a href="search.html">搜索</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>热门分类</h2>
+        <ul>
+          <li><a href="category-action-adventure.html">动作冒险</a></li>
+          <li><a href="category-drama-selected.html">剧情精选</a></li>
+          <li><a href="category-comedy-light.html">喜剧轻松</a></li>
+          <li><a href="category-romance-emotion.html">爱情情感</a></li>
+          <li><a href="category-suspense-thriller.html">悬疑惊悚</a></li>
+          <li><a href="category-sci-fi-fantasy.html">科幻奇幻</a></li>
+          <li><a href="category-family-animation.html">家庭动画</a></li>
+          <li><a href="category-history-war.html">历史战争</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>观影提示</h2>
+        <p>页面以静态 HTML 呈现影片标题、简介、标签、年份、地区和相关推荐，支持电脑与手机浏览。</p>
+      </section>
+    </div>
+    <div class="footer-bottom">© 2026 影视在线 · 高清电影电视剧在线观看平台</div>
+  </footer>
+  <script src="assets/movie-index.js"></script>
+  <script type="module" src="assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
